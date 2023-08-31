@@ -16,6 +16,10 @@ const assignment = {};
  */
 function sumOfNumbersTo(destination) {
     let sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum+=i;
+      }
+      console.log(sum);
     return sum
 }
 
@@ -36,8 +40,16 @@ function countEvenNumbersWithin(destination) {
     // Write your code here
     // get the number from 1 to destination
     let sum = 0;
-    let count = 0;
-    let arrayOfEvenNumbers = [];
+   let i, n,   count = 0;
+    let arrayOfEvenNumbers = [2,4,6,8,10];
+    for (i=1; i<=10; i++){
+        n= paraseInt(Math.random()*10)
+        console.log(n)
+        if(n%2==0){
+            count++
+        }
+    }
+    console.log("count is,", count);
 
     return {
         // property value shorthand
