@@ -17,11 +17,13 @@ const assignment = {};
 function sumOfNumbersTo(destination) {
     let sum = 0;
     for (let i = 1; i <= 10; i++) {
-        sum+=i;
+        sum += i;
       }
-      console.log(sum);
-    return sum
+    return sum;
 }
+const destination = 10;
+const result = sumOfNumbersTo(10);
+console.log("sum:", result);
 
 
 assignment.sumOfNumbersTo = sumOfNumbersTo;
